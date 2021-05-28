@@ -17,8 +17,18 @@ public class VipCustomer {
 
     public VipCustomer(String name, int creditLimit) {
         this(name, creditLimit, "default email");
-        this.name = name;
-        this.creditLimit = creditLimit;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCreditLimit() {
+        return creditLimit;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override
