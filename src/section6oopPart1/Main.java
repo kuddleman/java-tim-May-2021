@@ -21,9 +21,22 @@ public class Main {
 
        // moola.withdrawFunds(80000);
 
-        moola.depositFunds(6000);
-        moola.withdrawFunds(5000);
-        moola.withdrawFunds(70000);
+//        moola.depositFunds(6000);
+//        moola.withdrawFunds(5000);
+//        moola.withdrawFunds(70000);
+
+          VipCustomer vip1 = new VipCustomer();
+        System.out.println(vip1.toString());
+
+        System.out.println(" ");
+
+        VipCustomer vip2 = new VipCustomer("Waif", 1000, "gmail");
+        System.out.println(vip2.toString());
+
+        System.out.println(" ");
+
+        VipCustomer vip3 = new VipCustomer("Crocker",  2000);
+        System.out.println(vip3.toString());
 
 
 
