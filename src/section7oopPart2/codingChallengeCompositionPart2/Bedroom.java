@@ -1,6 +1,6 @@
 package section7oopPart2.codingChallengeCompositionPart2;
 
-import section6oopPart1.Wall;
+
 
 public class Bedroom {
     private String name;
@@ -26,11 +26,11 @@ public class Bedroom {
     }
 
     public Lamp getLamp() {
-
+        return lamp;
     }
 
     public void makeBed() {
         System.out.println("Bedroom class making bed");
-        bed.make;
+        bed.make();
     }
 }
