@@ -6,12 +6,22 @@ public class Car {
     private int cylinders;
     private int wheels = 4;
 
+
+
     public Car(String name, boolean engine, int cylinders, int wheels) {
         this.name = name;
         this.engine = engine;
         this.cylinders = cylinders;
         this.wheels = wheels;
     }
+
+    public Car(String name, int cylinders) {
+        this.name = name;
+        this.cylinders = cylinders;
+
+    }
+
+
 
     public String getName(){
         return name;
