@@ -11,5 +11,9 @@ public class MobileTelephoneTester {
         Contact c2 = new Contact("Sleepy", "5643");
         Contact c3 = new Contact("Crocker", "1254327");
 
+        mobile.addContact(c1);
+        mobile.addContact(c2);
+
+        mobile.printContactList();
     }
 }
