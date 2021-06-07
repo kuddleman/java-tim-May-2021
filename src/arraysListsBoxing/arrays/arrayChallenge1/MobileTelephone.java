@@ -18,7 +18,7 @@ public class MobileTelephone {
         }
     }
 
-    private int findItem(Contact contact){
+    private int findContact(Contact contact){
         String searchName = contact.getName();
         for(int i = 0; i < contactList.size(); i++) {
             String contactName = contactList.get(i).getName();
@@ -28,5 +28,35 @@ public class MobileTelephone {
         }
         System.out.println("Contact is not in list.");
         return -1;
+    }
+
+    public boolean onFile(Contact contact) {
+        int position = findContact(contact);
+        if(position >= 0) {
+            return true;
+        }
+        return false;
+    }
+
+    //modify
+    public void modifyContact(Contact currentContact, Contact newContact) {
+        int position = findContact(currentContact);
+        if(position >= 0) {
+            modifyGroceryItem(position, newContact);
+        }
+    }
+    private void modifyGroceryItem(int position, Contact newContact) {
+        contactList.set(position, newContact);
+        System.out.println("Contact number " + (position + 1) +
+                " has been modified.");
+    }
+    public void removeContact(Contact contact) {
+        int position = findContact(contact);
+        if(position >= 0) {
+            removeContact(position);
+        }
+    }
+    private void removeContact(int position) {
+        contactList.remove(position);
     }
 }
