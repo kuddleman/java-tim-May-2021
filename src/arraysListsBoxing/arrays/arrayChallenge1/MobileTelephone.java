@@ -23,18 +23,21 @@ public class MobileTelephone {
         for(int i = 0; i < contactList.size(); i++) {
             String contactName = contactList.get(i).getName();
             if(contactName.equalsIgnoreCase(searchName)) {
+               // System.out.println("Yes, your contact is in the list: " + contact);
                return i;
             }
         }
-        System.out.println("Contact is not in list.");
+       // System.out.println("No, your contact is not in list.");
         return -1;
     }
 
     public boolean onFile(Contact contact) {
         int position = findContact(contact);
         if(position >= 0) {
+            System.out.println("Yes, your contact is in the list: " + contact);
             return true;
         }
+        System.out.println("No, your contact is not in list.");
         return false;
     }
 
@@ -42,10 +45,10 @@ public class MobileTelephone {
     public void modifyContact(Contact currentContact, Contact newContact) {
         int position = findContact(currentContact);
         if(position >= 0) {
-            modifyGroceryItem(position, newContact);
+            modifyContact(position, newContact);
         }
     }
-    private void modifyGroceryItem(int position, Contact newContact) {
+    private void modifyContact(int position, Contact newContact) {
         contactList.set(position, newContact);
         System.out.println("Contact number " + (position + 1) +
                 " has been modified.");
