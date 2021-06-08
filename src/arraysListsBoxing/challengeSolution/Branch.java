@@ -22,4 +22,23 @@ public class Branch {
         }
         return false;
     }
+
+    public boolean addCustomerTransaction(String customerName, double amount) {
+        Customer existingCustomer = findCustomer(customerName);
+        if(findCustomer(customerName) != null) {
+            existingCustomer.addTransaction(amount);
+            return true;
+        }
+        return false;
+    }
+
+    private Customer findCustomer(String customerName) {
+        for(int i = 0; i < this.customers.size(); i++) {
+            Customer checkedCustomer = this.customers.get(i);
+            if(checkedCustomer.getName().equalsIgnoreCase(customerName)) {
+                return checkedCustomer;
+            }
+        }
+        return null;
+    }
 }
