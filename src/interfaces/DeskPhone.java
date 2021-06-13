@@ -4,6 +4,10 @@ public class DeskPhone implements ITelephone {
     private int myNumber;
     private boolean isRinging;
 
+    public DeskPhone(int myNumber){
+        this.myNumber = myNumber;
+    }
+
     @Override
     public void powerOn() {
         System.out.println("no action taken.  No power button");
@@ -18,7 +22,7 @@ public class DeskPhone implements ITelephone {
 
     @Override
     public void answer() {
-
+        System.out.println("phone is answering");
     }
 
     @Override
