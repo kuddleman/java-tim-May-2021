@@ -1,6 +1,7 @@
 package linkedLists.linkedListChallenge;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Album {
     private String name;
@@ -26,5 +27,9 @@ public class Album {
             }
         }
         return null;
+    }
+
+    public boolean addToPlayList(int trackNumber, LinkedList<Song> playList) {
+        return true;
     }
 }
