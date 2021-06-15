@@ -1,4 +1,4 @@
-package interfaces.interfaceChallenge;
+package interfacesAbstractAndInnerClasses.interfaceChallenge;
 
 import java.util.List;
 

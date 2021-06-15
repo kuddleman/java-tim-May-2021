@@ -1,4 +1,4 @@
-package interfaces;
+package interfacesAbstractAndInnerClasses;
 
 public class DeskPhone implements ITelephone {
     private int myNumber;

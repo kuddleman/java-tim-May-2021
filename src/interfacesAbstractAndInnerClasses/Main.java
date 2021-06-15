@@ -1,6 +1,6 @@
-package interfaces;
+package interfacesAbstractAndInnerClasses;
 
-import interfaces.interfaceChallenge.ISaveable;
+import interfacesAbstractAndInnerClasses.interfaceChallenge.ISaveable;
 
 import java.util.*;
 

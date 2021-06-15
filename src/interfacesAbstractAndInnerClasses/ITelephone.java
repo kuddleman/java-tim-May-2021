@@ -1,4 +1,4 @@
-package interfaces;
+package interfacesAbstractAndInnerClasses;
 
 public interface ITelephone {
     //define methods to be used by a class implementing
