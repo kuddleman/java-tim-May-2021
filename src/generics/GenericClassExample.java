@@ -1,8 +1,29 @@
 package generics;
 
 public class GenericClassExample {
-    Product product = new Product(121, "Soap");
-    int pId = product.g
+    public static void main(String[] args) {
+//    Product product = new Product(121, "Soap");
+//    int pId = (int)product.getProductId();
+//    String productDescription = (String)product.getProductDescription();
+
+        Product1<Integer, String> prod = new Product1<>(121, "Soap");
+        Product1<String, String> anotherProd = new Product1<>("idnum", "anotherSoap");`
+    }
+
+}
+
+class Product1< PRODUCT, DESCRIPTION > {
+    private PRODUCT productId;
+    private DESCRIPTION productDescription;
+
+    public Product1(PRODUCT productId, DESCRIPTION productDescription) {
+        this.productId = productId;
+        this.productDescription = productDescription;
+    }
+
+
+
+
 
 }
 class Product{
