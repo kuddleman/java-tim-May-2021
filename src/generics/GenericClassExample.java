@@ -7,7 +7,7 @@ public class GenericClassExample {
 //    String productDescription = (String)product.getProductDescription();
 
         Product1<Integer, String> prod = new Product1<>(121, "Soap");
-        Product1<String, String> anotherProd = new Product1<>("idnum", "anotherSoap");`
+        Product1<String, String> anotherProd = new Product1<>("idnum", "anotherSoap");
     }
 
 }
