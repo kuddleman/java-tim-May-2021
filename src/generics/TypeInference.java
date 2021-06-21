@@ -12,7 +12,6 @@ public class TypeInference {
         List<String> li1 = new ArrayList<>();
         // declaration         // implementation
         Shape<String> shape = new Shape<>("hello");
-
     }
 }
 
